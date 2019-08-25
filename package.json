@@ -4,7 +4,7 @@
   "description": "An isomorphic React application implementing latest development standards",
   "main": "index.js",
   "scripts": {
-    "babels": "babel-node babel-test.js",
+    "babels": "babel-node server/index.jsx",
     "build": "cross-env webpack --config ./webpack.config.prod.babel.js",
     "postinstall": "npm install -g babel-cli@7.0.0-beta.3 cross-env@5.0.5 webpack@3.6.0",
     "start": "npm run start-prod",

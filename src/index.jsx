@@ -26,5 +26,15 @@ if (module.hot) {
     })
 }
 
-render(App);
+//render(App);
+
+store.subscribe(()=>{
+    const state = store.getState();
+    if(state.questions.length > 0) {
+        console.info('Mounting app');
+        render(App);
+    } else {
+        console.log("App not yet mounting");
+    }
+})
 fetchDataForLocation();
